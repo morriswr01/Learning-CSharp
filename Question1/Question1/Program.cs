@@ -11,28 +11,35 @@ namespace Question1
         static void Main(string[] args)
         {
             Console.Write("Please enter length 1: ");
-            int x = int.Parse(Console.ReadLine());
+            int len1 = int.Parse(Console.ReadLine());
             Console.Write("Please enter length 2: ");
-            int y = int.Parse(Console.ReadLine());
+            int len2 = int.Parse(Console.ReadLine());
             Console.Write("Please enter the angle: ");
             int angle = int.Parse(Console.ReadLine());
             bool equal = false;
-            bool choosenAngles = false;
             bool isNinety = false;
-            if (x == y)
-                equal = true;
-            else if (angle == 60 || angle == 120)
-                choosenAngles = true;
-            else if (angle == 90)
-                isNinety = true;
+            bool choosenAngles = false;
 
-            Console.WriteLine(WhatShape(equal, choosenAngles, isNinety));
+            if (len1 == len2)
+                equal = true;
+            if (angle == 90)
+                isNinety = true;
+            if (angle == 60 || angle == 120)
+                choosenAngles = true;
+            Console.WriteLine("Is ninety :" + isNinety);
+            Console.WriteLine("Equal is: " + equal);
+            Console.WriteLine("choosenAngles is: " + choosenAngles);
+            Console.ReadLine();
+
+            Console.Write(WhatShape(equal, isNinety, choosenAngles));
             Console.ReadLine();
 
         }
 
-        private static string WhatShape(bool equal, bool choosenAngles, bool isNinety)
+        private static string WhatShape(bool equal, bool isNinety, bool choosenAngles)
         {
+
+
             if (isNinety && equal)
             {
                 return "This is a Square crystal!";
@@ -45,10 +52,10 @@ namespace Question1
             {
                 return "This is a Hexagonal crystal!";
             }
-            //else if (!(isNinety) && !(choosenAngles) && equal)
-            //{
-            //    return "This is a Rhombic crystal!";
-            //}
+            else if (!(isNinety) && !(choosenAngles) && equal)
+            {
+                return "This is a Rhombic crystal!";
+            }
             else if (!(choosenAngles) && !(equal))
             {
                 return "This is a Parralellogram crystal!";
