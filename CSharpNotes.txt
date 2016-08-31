@@ -1,0 +1,32 @@
+Debugging:
+
+-Research using the error message itself
+-MSDN
+-Stack exchanged
+-Channel9
+
+Asking Questions:
+
+-Post in correct category
+-Simple title
+-Short synopsis, what you expect, what happened, exact error
+-Screenshots possible anotated
+-Code snippet
+-What have you done so far, has it ruled anything out or helped
+-Versions: OS, Prg Lang, IDE version
+-Describe what you did after solution has been reached
+-Be polite
+
+Things to learn:
+
+-SQl server(Entity Framework)
+-ASP.net(core mvc, web)
+-OOP
+-Windows presentation foundation
+-Universal windows platform
+-Code structure, layers of responsibility, Application architecture(DEV U)
+-Dependency injection
+-Unit tests
+-Agile
+-Planning poker
+
