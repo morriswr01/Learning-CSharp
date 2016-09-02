@@ -1,0 +1,1 @@
+ListBox = Lists items that are added to it, listBox1.Items.Add(something) possibly in a loops so multiple items get added.
